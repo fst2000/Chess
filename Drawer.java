@@ -2,5 +2,5 @@ import java.awt.Graphics;
 
 public interface Drawer
 {
-    void draw(Graphics g2d);
+    void draw(Graphics g);
 }
