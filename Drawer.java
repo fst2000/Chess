@@ -1,6 +1,6 @@
-import java.awt.Graphics2D;
+import java.awt.Graphics;
 
 public interface Drawer
 {
-    void draw(Graphics2D g2d);
+    void draw(Graphics g2d);
 }

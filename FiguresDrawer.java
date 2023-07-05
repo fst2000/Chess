@@ -1,4 +1,4 @@
-import java.awt.Graphics2D;
+import java.awt.Graphics;
 
 public class FiguresDrawer implements Drawer
 {
@@ -8,7 +8,7 @@ public class FiguresDrawer implements Drawer
     }
 
     @Override
-    public void draw(Graphics2D g2d)
+    public void draw(Graphics g2d)
     {
         for (Figure figure : figures)
         {
