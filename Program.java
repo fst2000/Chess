@@ -5,9 +5,9 @@ public class Program
     {
         int size = 400;
         Displayer jFrame = new JFrameDisplayer(new JFrame("ChessField"), size, size);
-        Drawer figuresDrawer = new FiguresDrawer(new ChessFiguresBuilder(size >> 3).buildFigures());
-        Drawer chessFielDrawer = new ChessFieldDrawer(size);
-        jFrame.display(chessFielDrawer);
-        jFrame.display(figuresDrawer);
+        Figure figures = new CompositeFigure(new ChessFiguresBuilder(size >> 3).buildFigures());
+        Drawer chessFieldDrawer = new ChessFieldDrawer(size);
+        jFrame.display(chessFieldDrawer);
+        jFrame.display(figures.figureDrawer());
     }
 }
